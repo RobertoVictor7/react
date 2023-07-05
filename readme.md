@@ -1,4 +1,4 @@
-<h1>Estudos de React utilizando como base principal o curso "React Ninja"</h1>
+<h2>Estudos de React utilizando como base principal o curso "React Ninja"</h2>
 
 <details>
 <summary>hello-world</summary>
