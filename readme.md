@@ -1,5 +1,7 @@
 <h2>Estudos de React utilizando como base principal o curso "React Ninja"</h2>
 
+<p>Repositorio criado com o propósito de documentar minha jornada de aprendizado pelo curso "react ninja", Já possuo certa experiência com o framework, porém pretendo aprimorar meu conhecimento, para criar aplicações mais robustas utilizando o mesmo.</p>
+
 <details>
 <summary>hello-world</summary>
 <br>
