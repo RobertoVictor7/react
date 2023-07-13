@@ -13,3 +13,5 @@
 <br> 
 <p>Modulo que aprenderemos sobre Webpack, o Webpack é um module bundler, ele basicamente junta nossos modulos ES6 em um pacote, e entrega ao navegador utilizando ES5. Assim o browser consegue realizar sua leitura :)</p>
 </details>
+
+
