@@ -1,4 +1,4 @@
-"use strict";
+'use strict'
 
 import React from 'react'
 import { render } from 'react-dom'
@@ -7,10 +7,10 @@ import App from './app'
 
 render(
   <AppContainer>
-  <App/>
+    <App />
   </AppContainer>,
   document.querySelector('[data-js="app"]')
-);
+)
 
 if (module.hot) {
   module.hot.accept('./app', () => {
@@ -18,9 +18,9 @@ if (module.hot) {
 
     render(
       <AppContainer>
-      <NextApp/>
+        <NextApp />
       </AppContainer>,
       document.querySelector('[data-js="app"]')
-    );
+    )
   })
 }
