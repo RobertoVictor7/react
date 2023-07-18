@@ -6,9 +6,7 @@ import Title from './title'
 const App = React.createClass({
   render: function () {
     return (
-      <h1>
         <Title name='Victor Roberto' />
-      </h1>
     )
   }
 })
