@@ -9,7 +9,7 @@ class App extends Component {
   render () {
     return (
       <div className='container'>
-        <Title name='Victor' lastName='Roberto'/>
+        <Title name='Victor' lastName='Roberto' />
         <Square />
         <Button>
           <span>Texto </span>
