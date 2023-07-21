@@ -3,15 +3,10 @@
 import React from 'react'
 import Title from './title'
 
-const App = React.createClass({
-  render: function () {
-    return (
-      <div className='container'>
-        <Title name="victor" lastName={2}/>
-      </div>
-        
-    )
-  }
-})
-
+const App = () => (
+  <div className="container">
+    <Title name="Victor" lastName="Roberto" />
+  </div>
+)
+  
 export default App
