@@ -18,8 +18,8 @@ class App extends Component {
           Outro texto
         </Button>
 
-        <LikeButton/>
-        <SearchButton/>
+        <LikeButton />
+        <SearchButton />
       </div>
     )
   }
