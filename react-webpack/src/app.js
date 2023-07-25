@@ -3,34 +3,24 @@
 import React, { Component } from 'react'
 import Square from './square'
 import Button from './button'
-import Title from './title'
-import LikeButton from './like-button'
-import SearchButton from './search-button'
 
 class App extends Component {
   constructor () {
-    super() // super executa o component e trás os metodos e propriedades do Component
+    super()
     this.state = {
-      text: 'Fulano'
+      color: 'green'
     }
   }
 
   render () {
     return (
       <div className='container'>
-        <p onClick={() => this.setState({ text: 'Ciclano' })}>
-          {this.state.text}
-        </p>
 
-        <Title name='Victor' lastName='Roberto' />
-        <Square />
-        <Button>
-          <span>Texto </span>
-          Outro texto
-        </Button>
+        <Square color={this.state.color} />
 
-        <LikeButton />
-        <SearchButton />
+        {['red', 'green', 'blue'].map((color) => (
+          <Button key={color} handleClick={() => this.setState({ color })}>{color}</Button>))}
+
       </div>
     )
   }
