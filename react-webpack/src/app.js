@@ -25,7 +25,7 @@ class App extends Component {
     console.log('render')
     return (
       <div className='container'>
-        <Timer time={this.state.time}/>
+        <Timer time={this.state.time} />
 
         <button onClick={() => {
           this.setState({ time: this.state.time + 10 }) }}>
