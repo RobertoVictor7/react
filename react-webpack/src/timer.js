@@ -4,6 +4,7 @@ import React, { Component } from 'react'
 
 class Timer extends Component {
   constructor () {
+    console.log('constructor timer')
     super()
     this.state = {
       time: 0
@@ -13,15 +14,20 @@ class Timer extends Component {
   }
 
   componentWillReceiveProps (nextProps) {
-    console.log('componentWillReceiveProps', this.props, nextProps)
+    console.log('componentWillReceiveProps timer', this.props, nextProps)
   }
 
   shouldComponentUpdate (nextProps, nextState) {
-    console.log('shouldComponentUpdate', this.state, nextState)
+    //console.log('shouldComponentUpdate timer', this.props, nextProps)
     return this.state.time !== nextState.time
   }
 
+  componentWillUpdate (nextProps, nextState) {
+    console.log('componentWillUpdate timer', this.props, nextProps)
+  }
+
   componentDidMount () {
+    console.log('componentDidMount Timer')
     this.timer = setInterval(() => {
       this.setState({ time: this.state.time + 1 })
     }, 1000)
