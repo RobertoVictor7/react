@@ -6,7 +6,7 @@ class App extends Component {
   constructor () {
     super()
     this.state = {
-      value: '2'
+      value: 'default textarea'
     }
   }
 
@@ -14,18 +14,12 @@ class App extends Component {
     return (
       <div>
         <form>
-          <select
+          <textarea
             value={this.state.value}
             onChange={(e) => {
-              this.setState({
-                value: e.target.value
-              })
+              this.setState({ value: e.target.value })
             }}
-          >
-            <option value='1'> Opção 1 </option>
-            <option value='2'> Opção 2 </option>
-            <option value='3'> Opção 3 </option>
-          </select>
+          />
         </form>
       </div>
     )
