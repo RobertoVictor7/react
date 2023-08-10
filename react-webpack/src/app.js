@@ -13,13 +13,19 @@ class App extends Component {
   render () {
     return (
       <div>
-        <form>
+        <form onSubmit={(e) => {
+          e.preventDefault()
+          console.log('submit no form', e)
+        }}
+        >
           <textarea
+            name='textarea'
             value={this.state.value}
             onChange={(e) => {
               this.setState({ value: e.target.value })
             }}
           />
+          <button type='submit'> Enviar </button>
         </form>
       </div>
     )
