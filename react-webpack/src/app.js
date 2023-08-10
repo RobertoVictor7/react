@@ -6,27 +6,32 @@ class App extends Component {
   constructor () {
     super()
     this.state = {
-      value: 'default textarea'
+      checked: false,
+      showContent: false
     }
   }
 
   render () {
     return (
       <div>
-        <form onSubmit={(e) => {
-          e.preventDefault()
-          console.log('submit no form', e)
-        }}
-        >
-          <textarea
-            name='textarea'
-            value={this.state.value}
+        <label>
+          <input
+            type='checkbox'
+            checked={this.state.checked}
             onChange={(e) => {
-              this.setState({ value: e.target.value })
+              this.setState({
+                checked: !this.state.checked
+              }, () => {
+                this.setState({
+                  showContent: this.state.checked
+                })
+              })
             }}
-          />
-          <button type='submit'> Enviar </button>
-        </form>
+          />{' '}
+          Mostrar Conteudo
+        </label>
+
+        {this.state.showContent && <div>Olha eu aqui!</div>}
       </div>
     )
   }
